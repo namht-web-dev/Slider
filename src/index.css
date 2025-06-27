@@ -110,7 +110,6 @@ h5 {
 
 .text {
   margin-bottom: 1.5rem;
-  max-width: 40em;
 }
 
 small,
@@ -260,13 +259,17 @@ ul {
   max-width: var(--max-width);
   margin: 0 auto;
   margin-top: 15rem;
+  height: 450px;
   position: relative;
+  overflow: hidden;
 }
 
 .slide{
   display: grid;
   gap: 1rem;
   position: absolute;
+  width: 100%;
+  transition: var(--transition);
 }
 
 .slide .person-img{
@@ -280,6 +283,8 @@ ul {
 
 .name, .text{
   text-align: center;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .icon{
@@ -299,5 +304,28 @@ ul {
   place-items: center;
   position: absolute;
   top: 170px;
+  font-size: large;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
+.text{
+  line-height: 1.5;
+  letter-spacing: var(--letterSpacing);
+}
+
+.prev-slide{
+  left: 3rem;
+}
+
+
+.next-slide{
+  right: 3rem;
+}
+
+.prev-slide:hover, .next-slide:hover{
+  background-color: transparent;
+  border-color: var(--primary-300);
+  color: var(--primary-500);
+  box-shadow: var(--shadow-3);
+}
