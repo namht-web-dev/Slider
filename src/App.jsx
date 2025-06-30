@@ -1,9 +1,11 @@
 import Carousel from "./Carousel";
+import SlickCarousel from "./SlickCarousel";
 
 function App() {
   return (
     <main>
-      <Carousel />
+      {/* <Carousel /> */}
+      <SlickCarousel />
     </main>
   );
 }

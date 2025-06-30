@@ -272,7 +272,7 @@ ul {
   transition: var(--transition);
 }
 
-.slide .person-img{
+.person-img{
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -285,6 +285,16 @@ ul {
   text-align: center;
   margin: 0 auto;
   width: 70%;
+  padding: 1rem 0;
+}
+
+.name{
+  color: var(--primary-500);
+  text-transform: uppercase;
+}
+
+.title{
+  text-transform: capitalize;
 }
 
 .icon{
@@ -304,5 +314,50 @@ ul {
   place-items: center;
   position: absolute;
   top: 170px;
+  font-size: large;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
+.text{
+  line-height: 1.5;
+  letter-spacing: var(--letterSpacing);
+}
+
+.prev-slide{
+  left: 3rem;
+}
+
+
+.next-slide{
+  right: 3rem;
+}
+
+.prev-slide:hover, .next-slide:hover{
+  background-color: transparent;
+  border-color: var(--primary-300);
+  color: var(--primary-500);
+  box-shadow: var(--shadow-3);
+}
+
+/* ============= SLICK CSS =============== */
+
+.slick-container{
+  width: 80vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  margin-top: 15rem;
+  text-align: center;
+}
+
+.slick-slide img{
+  display: inline-block;
+}
+
+.slick-prev::before{
+  color: var(--primary-500) !important;
+}
+
+.slick-next::before{
+  color: var(--primary-500) !important;
+}
