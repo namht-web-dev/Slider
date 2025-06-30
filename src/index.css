@@ -110,7 +110,6 @@ h5 {
 
 .text {
   margin-bottom: 1.5rem;
-  max-width: 40em;
 }
 
 small,
@@ -260,13 +259,17 @@ ul {
   max-width: var(--max-width);
   margin: 0 auto;
   margin-top: 15rem;
+  height: 450px;
   position: relative;
+  overflow: hidden;
 }
 
 .slide{
   display: grid;
   gap: 1rem;
   position: absolute;
+  width: 100%;
+  transition: var(--transition);
 }
 
 .slide .person-img{
@@ -280,6 +283,8 @@ ul {
 
 .name, .text{
   text-align: center;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .icon{
@@ -300,6 +305,4 @@ ul {
   position: absolute;
   top: 170px;
 }
-
-
 
